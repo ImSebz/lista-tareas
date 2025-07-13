@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista de Tareas</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Lista de Tareas</h1>
+
+            <div class="input-section">
+                <input type="text" id="taskInput" placeholder="¿Qué necesitas hacer hoy?">
+                <button id="addTaskBtn">+ Agregar</button>
+            </div>
+
+            <div class="filter-section">
+                <button id="filterAll" class="active">Todas</button>
+                <button id="filterCompleted">Completadas</button>
+                <button id="filterPending">Pendientes</button>
+            </div>
+
+            <ul id="taskList"></ul>
+        </div>
+
+        <script type="module" src="app.js"></script>
+    </body>
+</html>
